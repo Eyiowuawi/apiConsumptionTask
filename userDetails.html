@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <nav class="nav"><h1>Eyiowuawi</h1></nav>
+    <div class="tabContainer">
+      <!-- Tab links -->
+      <div class="tab">
+        <div class="profileImg">
+          <img src="./IMG_2506.jpeg" alt="" />
+        </div>
+        <button
+          id="defaultOpen"
+          class="tablinks"
+          onclick="openCity(event, 'Details')"
+        >
+          Details
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Albums')">
+          Albums
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Todo')">
+          Todo
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Photo')">
+          Photos
+        </button>
+      </div>
+      <div class="tabcontentContainer">
+        <div class="loader"></div>
+        <div id="Details" class="tabcontent info">
+          <h2 class="name"></h2>
+          <div>
+            <span>Email</span>
+            <p class="email"></p>
+          </div>
+          <div>
+            <span>Phone</span>
+            <p class="phone"></p>
+          </div>
+          <div>
+            <span>Address</span>
+            <p class="address"> <p class="suite"></p></p>
+            
+          </div>
+          <div>
+            <span>Company</span>
+            <p class="company"></p>
+          </div>
+          <div>
+            <span>City</span>
+            <p class="location"></p>
+          </div>
+          <div>
+            <span>Website</span>
+            <p class="website"></p>
+          </div>
+       </div>      
+    </div>
+    <div id="Albums" class="tabcontent">
+      <h3>London</h3>
+      <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="Todo" class="tabcontent">
+      <h3>Paris</h3>
+      <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="Photo" class="tabcontent">
+      <h3>Tokyo</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+    <script src="/userDetails.js"></script>
+  </body>
+</html>
